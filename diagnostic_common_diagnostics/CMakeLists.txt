@@ -25,7 +25,8 @@ endif()
 catkin_install_python(PROGRAMS
   src/diagnostic_common_diagnostics/cpu_monitor.py
   src/diagnostic_common_diagnostics/ram_monitor.py
-  src/diagnostic_common_diagnostics/hd_monitor.py
+# commented as per package.xml
+#  src/diagnostic_common_diagnostics/hd_monitor.py
   src/diagnostic_common_diagnostics/ntp_monitor.py
   src/diagnostic_common_diagnostics/sensors_monitor.py
   src/diagnostic_common_diagnostics/tf_monitor.py

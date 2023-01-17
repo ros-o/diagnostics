@@ -18,7 +18,11 @@
   <build_depend>rostest</build_depend>
 
   <run_depend>diagnostic_updater</run_depend>
-  <run_depend>hddtemp</run_depend>
+  <!-- hddtemp is not available in Ubuntu jammy+
+  If you actively use this monitor, please migrate it to `drivetemp` as per
+  https://bugs.launchpad.net/ubuntu/+source/hddtemp/+bug/1979320
+  -->
+  <!--<run_depend>hddtemp</run_depend>-->
   <run_depend>lm-sensors</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>tf</run_depend>
