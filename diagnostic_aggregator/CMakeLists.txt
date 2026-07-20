@@ -19,7 +19,7 @@ if( (${diagnostic_msgs_VERSION} VERSION_EQUAL "1.12.0") OR
   message(FATAL_ERROR "diagnostic_msgs version ${REQUIRED_diagnostic_msgs_VERSION_Jade} or newer is required to build diagnotic_aggregator on ROS Jade")
 endif()
 
-find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS thread)
 include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
 set(LOCAL_GTEST_DIR "gtest-1.7.0")
